@@ -1,18 +1,18 @@
 env:
   browser: true
   es2021: true
-parser: "@typescript-eslint/parser"
+parser: '@typescript-eslint/parser'
 parserOptions:
   project:
-    - "./tsconfig.json"
-    - "./packages/*/tsconfig.json"
-  sourceType: "module"
+    - './tsconfig.json'
+    - './packages/*/tsconfig.json'
+  sourceType: 'module'
   ecmaVersion: 12
   ecmaFeatures:
     jsx: true
 root: true
 plugins:
-  - "@typescript-eslint"
+  - '@typescript-eslint'
 settings:
   react:
     version: detect
@@ -21,3 +21,4 @@ extends:
   - plugin:@typescript-eslint/recommended
   - plugin:react/recommended
   - plugin:react-hooks/recommended
+  - prettier
